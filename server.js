@@ -4,7 +4,7 @@ app.get("/", (req,res)=>{
     res.send("<h1>Workin Fine</h1>")
 })
 app.get("/user", (req,res)=>{
-    res.status.json({
+    res.status(400).json({
         users:[],
         success:false
     })
